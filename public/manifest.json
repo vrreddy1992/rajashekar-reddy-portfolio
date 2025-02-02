@@ -1,0 +1,17 @@
+{
+    "name": "Rajashekar Reddy | DevOps & SRE Engineer",
+    "short_name": "Reddy Portfolio",
+    "description": "A portfolio showcasing expertise in DevOps, SRE, and Cloud Automation.",
+    "start_url": "/",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "display": "standalone",
+    "icons": [
+      {
+        "src": "/rajashekar-reddy-resume/profile.jpg",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ]
+  }
+  
