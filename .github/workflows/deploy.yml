@@ -1,0 +1,29 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # This triggers the action on a push to the 'main' branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3  # Checkout the code from your repository
+      - uses: pnpm/action-setup@v2  # Set up pnpm
+        with:
+          version: latest
+          
+      - name: Install dependencies
+        run: pnpm install  # Install the dependencies using pnpm
+      
+      - name: Build project
+        run: pnpm run build  # Run the build script to generate the production files
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages  # Deploy to the gh-pages branch
+          folder: dist  # The folder containing the built files
+
