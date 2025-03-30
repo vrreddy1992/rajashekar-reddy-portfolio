@@ -26,5 +26,4 @@ jobs:
         with:
           branch: gh-pages  # Deploy to the gh-pages branch
           folder: dist  # The folder containing the built files
-          repository-name: vrreddy1992/rajashekar-reddy-portfolio
 
